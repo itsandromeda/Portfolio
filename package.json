@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio to showcase some of the work I developed during my time in Laboratoria's bootcamp.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsandromeda/Portfolio.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "GULP",
+    "SASS"
+  ],
+  "author": "Annia J. Flores <@ItsAndromeda>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsandromeda/Portfolio/issues"
+  },
+  "homepage": "https://github.com/itsandromeda/Portfolio#readme"
+}
