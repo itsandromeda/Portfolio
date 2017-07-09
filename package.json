@@ -1,40 +1,48 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Portfolio to showcase some of the work I developed during my time in Laboratoria's bootcamp.",
-  "main": "app.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/itsandromeda/Portfolio.git"
-  },
-  "keywords": [
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "GULP",
-    "SASS"
-  ],
-  "author": "Annia J. Flores <@ItsAndromeda>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/itsandromeda/Portfolio/issues"
-  },
-  "homepage": "https://github.com/itsandromeda/Portfolio#readme",
-  "dependencies": {
-    "express": "^4.15.3",
-    "jquery": "^3.2.1"
-  },
-  "devDependencies": {
-    "body-parser": "^1.17.2",
-    "bootstrap": "^3.3.7",
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1",
-    "gulp-browserify": "^0.5.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "owl.carousel": "^2.2.0"
-  }
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Portfolio to showcase some of the work I developed during my time in Laboratoria's bootcamp.",
+    "main": "app.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/itsandromeda/Portfolio.git"
+    },
+    "keywords": [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "GULP",
+        "SASS"
+    ],
+    "language": {
+        "javascript": {
+            "linting.prefer": [
+                "JSHint"
+            ],
+            "linting.usePreferredOnly": true
+        }
+    },
+    "author": "Annia J. Flores <@ItsAndromeda>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/itsandromeda/Portfolio/issues"
+    },
+    "homepage": "https://github.com/itsandromeda/Portfolio#readme",
+    "dependencies": {
+        "express": "^4.15.3"
+    },
+    "devDependencies": {
+        "body-parser": "^1.17.2",
+        "bootstrap": "^3.3.7",
+        "browser-sync": "^2.18.12",
+        "gulp": "^3.9.1",
+        "gulp-browserify": "^0.5.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "owl.carousel": "^2.2.0"
+    }
 }
