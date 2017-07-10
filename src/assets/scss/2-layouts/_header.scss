@@ -1,0 +1,48 @@
+.header {
+    @extend %flex-center;
+    height: 100vh;
+    .container {
+        background: linear-gradient(to bottom right, $palette-secondary 0%, $palette-secondary 50%, $palette-primary 50%, $palette-primary 100%);
+        width: 95%;
+        height: 90vh;
+        padding: 0;
+        overflow: hidden;
+    }
+    &__pic {
+        @include rotate(1.5deg);
+        position: relative;
+        top: 65px;
+        left: -2px;
+        padding: 0;
+    }
+    &__info {
+        position: relative;
+        top: 180px;
+        padding: 0;
+        padding-left: 60px;
+        p {
+            background-color: $palette-secondary;
+            font-family: $secondary-font;
+            font-size: 4em;
+            color: white;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+        }
+        p:first-child {
+            width: 180px;
+            font-size: 2.5em;
+        }
+        p:nth-child(2) {
+            width: 420px;
+        }
+        p:last-child {
+            font-size: 2.9em;
+            width: 420px;
+            margin-bottom: 0.5em;
+        }
+        button {
+            float: left;
+            margin-right: 1em;
+        }
+    }
+}

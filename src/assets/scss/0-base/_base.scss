@@ -1,0 +1,25 @@
+/* BASE - Base styles*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+}
+
+button {
+    outline: none !important;
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    margin: 0;
+}
+
+.big-text {
+    font-size: 4em;
+}

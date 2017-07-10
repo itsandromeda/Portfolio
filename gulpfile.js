@@ -99,6 +99,6 @@ gulp.task('serve', () => {
     });
     gulp.watch(sources.html, ['html-watch']);
     gulp.watch([sources.SASS], ['sass-watch']);
-    gulp.watch([sources.jpg, sources.png], ['png-watch']);
+    gulp.watch([sources.jpg, sources.png], ['img-watch']);
     gulp.watch(sources.js, ['js-watch']);
 });
