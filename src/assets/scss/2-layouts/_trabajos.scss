@@ -1,0 +1,25 @@
+.trabajos {
+    background-color: $palette-primary;
+    .container {
+        padding: 64px 20px 60px 20px;
+    }
+    h2 {
+        margin-bottom: 1.5em;
+    }
+    .row div {
+        @include box-shadow(-5px, 5px, 10px, rgba(0, 0, 0, 0.2), $inset: false);
+        height: 220px;
+    }
+    &__box--dark {
+        background-color: $palette-secondary;
+        color: white;
+    }
+    .row div:hover {
+        @include box-shadow(-5px, 5px, 10px, rgba(0, 0, 0, 0.5), $inset: false);
+        z-index: 5;
+        transition: 1s all;
+    }
+    &__box-light {
+        background-color: white;
+    }
+}
