@@ -1,5 +1,28 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+/*global $, window, _, document*/
+$(window).scroll(_ = () => {
+    if ($(window).scrollTop() >= 5) {
+        $('#navbar').addClass('nav-scroll');
+    } else {
+        $('#navbar').removeClass('nav-scroll');
+    }
+});
+/*
+let lastScrollTop = 0;
 
+$(window).scroll(_ = () => {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        //hacer
+    } else {
+        //hacer
+        if (currentScroll <= 3) {
+            //hacer
+        }
+    }
+    lastScrollTop = currentScroll;
+}, false);*/
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.

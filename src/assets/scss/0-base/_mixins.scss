@@ -23,3 +23,16 @@
         box-shadow: $top $left $blur $color;
     }
 }
+
+@mixin font($font-family, $font-file, $otf: false) {
+    @font-face {
+        @if $otf {
+            font-family: $font-family;
+            src: url($font-file + '.otf');
+        }
+        @else {
+            font-family: $font-family;
+            src: url($font-file + '.ttf');
+        }
+    }
+}

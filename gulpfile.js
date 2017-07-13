@@ -17,33 +17,43 @@ var bodyParser = require('body-parser'),
         html: '/**/*.html',
         jpg: 'img/**/*.jpg',
         png: 'img/**/*.png',
+        fonts: 'fonts/**/*.ttf',
         SASS: 'scss/**/*.scss',
         mainSASS: 'scss/main.scss',
         js: 'js/app.js',
         bootstrap: 'bootstrap/dist/',
-        carousel: 'owl.carousel/dist/'
+        carousel: 'owl.carousel/dist/',
+        pdf: 'img/**/*.pdf'
     },
     sources = {
         assets: config.source + paths.assets,
         html: config.source + paths.html,
         jpg: config.source + paths.assets + paths.jpg,
         png: config.source + paths.assets + paths.png,
+        fonts: config.source + paths.assets + paths.fonts,
         SASS: config.source + paths.assets + paths.SASS,
         mainSASS: config.source + paths.assets + paths.mainSASS,
         js: config.source + paths.assets + paths.js,
         bootstrapCSS: config.modules + paths.bootstrap + 'css/bootstrap.min.css',
         bootstrapJS: config.modules + paths.bootstrap + 'js/bootstrap.min.js',
         carouselCSS: config.modules + paths.carousel + 'assets/*.css',
-        carouselJS: config.modules + paths.carousel + '**/*.js'
+        carouselJS: config.modules + paths.carousel + '**/*.js',
+        pdf: config.source + paths.assets + paths.pdf
     };
 
 gulp.task('html', () => {
-    gulp.src(sources.html).pipe(gulp.dest(config.dist));
+    gulp.src([sources.html, sources.pdf])
+        .pipe(gulp.dest(config.dist));
 });
 
 gulp.task('images', () => {
     gulp.src([sources.jpg, sources.png])
         .pipe(gulp.dest(config.dist + 'img'));
+});
+
+gulp.task('fonts', () => {
+    gulp.src(sources.fonts)
+        .pipe(gulp.dest(config.dist + 'fonts'));
 });
 
 gulp.task('sass', () => {
@@ -65,6 +75,11 @@ gulp.task('js', () => {
 });
 
 gulp.task('img-watch', ['images'], (done) => {
+    browserSync.reload();
+    done();
+});
+
+gulp.task('fonts-watch', ['fonts'], (done) => {
     browserSync.reload();
     done();
 });
@@ -100,5 +115,6 @@ gulp.task('serve', () => {
     gulp.watch(sources.html, ['html-watch']);
     gulp.watch([sources.SASS], ['sass-watch']);
     gulp.watch([sources.jpg, sources.png], ['img-watch']);
+    gulp.watch([sources.fonts], ['fonts-watch']);
     gulp.watch(sources.js, ['js-watch']);
 });

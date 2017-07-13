@@ -1,48 +1,48 @@
-.header {
-    @extend %flex-center;
-    height: 100vh;
-    .container {
-        background: linear-gradient(to bottom right, $palette-secondary 0%, $palette-secondary 50%, $palette-primary 50%, $palette-primary 100%);
-        width: 95%;
-        height: 90vh;
-        padding: 0;
-        overflow: hidden;
-    }
-    &__pic {
-        @include rotate(1.5deg);
+.wrapper {
+    padding: 60px;
+}
+
+.home {
+    .parallax-section {
+        background: url(img/header_background.jpg);
+        background-attachment: fixed;
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: 101%;
+        min-height: calc(100vh - 120px);
         position: relative;
-        top: 65px;
-        left: -2px;
-        padding: 0;
+        opacity: 0.9;
     }
-    &__info {
-        position: relative;
-        top: 180px;
-        padding: 0;
-        padding-left: 60px;
+    &__inner {
+        font-family: $font-quaternary;
+        color: $palette-primary;
+        position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        h1 {
+            font-size: 6em;
+            letter-spacing: 10px;
+        }
         p {
-            background-color: $palette-secondary;
-            font-family: $secondary-font;
-            font-size: 4em;
-            color: white;
-            margin-bottom: 10px;
-            padding: 5px 10px;
+            letter-spacing: 2px;
         }
-        p:first-child {
-            width: 180px;
-            font-size: 2.5em;
+    }
+    &__lang {
+        font-size: 0.5em;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    &__sections {
+        float: right;
+        a {
+            background-color: transparent !important;
+            color: $palette-primary;
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
         }
-        p:nth-child(2) {
-            width: 420px;
-        }
-        p:last-child {
-            font-size: 2.9em;
-            width: 420px;
-            margin-bottom: 0.5em;
-        }
-        button {
-            float: left;
-            margin-right: 1em;
+        a:hover {
+            opacity: 1;
         }
     }
 }

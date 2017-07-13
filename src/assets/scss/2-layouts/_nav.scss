@@ -1,0 +1,23 @@
+.navbar-header {
+    .navbar-brand {
+        font-family: $font-quaternary !important;
+        font-size: 2em;
+        opacity: 1;
+    }
+    span {
+        color: white;
+        opacity: 0.6;
+    }
+    a {
+        color: $palette-primary;
+        opacity: 0.5;
+        transition: opacity 0.5s ease;
+    }
+    a:hover {
+        text-decoration: none;
+        opacity: 1;
+    }
+    a:active {
+        opacity: 1;
+    }
+}

@@ -1,12 +1,16 @@
 // Internal variables
-$x-palette-purple: #4b33eb;
-$x-palette-green: #9fff60;
-$x-palette-dark-gray: #313439;
+$x-palette-lime: #92D933;
+$x-palette-violet: #991f67;
+$x-palette-shadow: #666;
+$x-palette-light: #fff;
 $x-palette-light-gray: #E1DFE1;
-
-$primary-font: 'Open Sans Condensed', sans-serif;
-$secondary-font: 'Anton', sans-serif;
+$x-palette-dark-gray: #313439;
+$x-palette-dark: #000;
+$font-primary: 'Open Sans Light', sans-serif;
+$font-secondary: 'Open Sans Semi Bold', sans-serif;
+$font-tertiary: 'Bebas Neue Book', sans-serif;
+$font-quaternary: 'Anurati Regular', sans-serif;
 // Global variables
-$palette-primary: $x-palette-light-gray;
-$palette-secondary: $x-palette-dark-gray;
+$palette-primary: $x-palette-light;
+$palette-secondary: $x-palette-violet;
 $palette-paragraph: $x-palette-dark-gray;

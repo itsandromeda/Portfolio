@@ -3,67 +3,66 @@
 <html>
 
 <head>
-    <title>Annia J. Flores | Front-end Developer Lima, Peru</title>
+    <title>Annia J. Flores | Front-end Developer egresada de Laboraroria en Lima, Perú</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <meta name="author" content="@AnniaJFlores">
+    <!-- Open Graph-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itsandromeda.heroku.com">
+    <meta property="og:image" content="assets/img/annia_j_flores_thumbnail.png">
+    <meta property="og:title" content="Annia J. Flores, Front-end Developer">
+    <meta property="og:site_name" content="Portafolio">
+    <meta property="og:description" content="Front-end Developer egresada de Laboraroria en Lima, Perú.">
+    <!-- twitter card-->
+    <meta name="twitter:card" content="@AnniaJFlores">
+    <meta name="twitter:site" content="@AnniaJFlores">
+    <meta name="twitter:title" content="Annia J. Flores, Front-end Developer">
+    <meta name="twitter:description" content="Front-end Developer egresada de Laboraroria en Lima, Perú.">
+    <meta name="twitter:image" content="assets/img/annia_j_flores_thumbnail.png">
+    <meta name="twitter:url" content="https://itsandromeda.heroku.com">
+    <!-- Bootstrap -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+    <link rel="icon" href="img/icon_annia.png">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <nav class="navbar row">
-                <div class="navbar-header col-md-4">
-                    <a class="navbar-brand" href="#">A</a>
-                </div>
-                <ul class="nav navbar-nav col-md-8">
-                    <li><a href="#">TRABAJOS</a></li>
-                    <li><a href="#">SOBRE MÍ</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="row">
-                <div class="header__pic col-md-4">
-                    <img class="img-responsive" src="img/home_border.png" alt="Annia J. Flores">
-                </div>
-                <div class="header__info col-md-8 text-center">
-                    <div class="col-md-8">
-                        <p>HOLA! SOY</p>
-                        <p>ANNIA J. FLORES</p>
-                        <p>FRONT-END DEVELOPER</p>
+    <div class="wrapper">
+        <header class="home">
+            <section class="parallax-section text-center">
+                <nav id="navbar" class="navbar">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">A</a>
+                        <div class="home__lang">
+                            <a href="index.html">ES </a>
+                            <span> / </span>
+                            <a href="#">ENG</a>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <button class="header__button--download btn btn-default btn-lg">DESCARGAR CV</button>
-                        <button class="header__button btn btn-default btn-lg">VER TRABAJOS</button>
+                    <div class="home__sections">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">TRABAJOS</a></li>
+                            <li><a href="#">SOBRE MÍ</a></li>
+                            <li><a href="#">CONTACTO</a></li>
+                        </ul>
                     </div>
+                </nav>
+                <div class="home__inner">
+                    <h1>ANNIA</h1>
+                    <p>FRONT - END DEVELOPER, LIMA - PERÚ</p>
+                    <form target="_blank" method="get" action="/annia-j-flores_resume.pdf">
+                        <button class="btn home__button" type="submit">Descargar CV</button>
+                    </form>
+
                 </div>
-            </div>
-        </div>
-    </header>
-    <section id="trabajos" class="trabajos">
-        <div class="container">
-            <h2 class="text-center">TRABAJOS</h2>
-            <div class="row">
-                <div class="trabajos__box--dark col-md-6">
-                    <h3>PROYECTO</h3>
-                </div>
-                <div class="trabajos__box--light col-md-6">
-                    <h3>PROYECTO</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="trabajos__box--light col-md-6">
-                    <h3>PROYECTO</h3>
-                </div>
-                <div class="trabajos__box--dark col-md-6">
-                    <h3>PROYECTO</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        </header>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bundle.js"></script>
 </body>
 
