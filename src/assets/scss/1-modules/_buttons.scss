@@ -11,3 +11,12 @@
         opacity: 0.5;
     }
 }
+
+.small-grid {
+    button {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
