@@ -1,8 +1,10 @@
 .navbar-header {
     .navbar-brand {
-        font-family: $font-quaternary !important;
-        font-size: 2em;
         opacity: 1;
+        img {
+            height: 28px;
+            margin-top: -5px;
+        }
     }
     span {
         color: white;

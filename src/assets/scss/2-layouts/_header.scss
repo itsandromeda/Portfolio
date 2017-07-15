@@ -3,6 +3,9 @@
 }
 
 .home {
+    .container {
+        width: 100%;
+    }
     .parallax-section {
         background: url(img/header_background.jpg);
         background-attachment: fixed;
@@ -17,16 +20,17 @@
         font-family: $font-quaternary;
         color: $palette-primary;
         position: absolute;
-        top: 35%;
+        top: 38.5%;
         left: 0;
         right: 0;
-        h1 {
-            font-size: 6em;
-            letter-spacing: 10px;
-        }
         p {
             letter-spacing: 2px;
         }
+    }
+    &__logo {
+        width: 32.4%;
+        margin:auto;
+        margin-bottom: 5px;
     }
     &__lang {
         font-size: 0.5em;

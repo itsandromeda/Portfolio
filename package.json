@@ -3,9 +3,7 @@
     "version": "1.0.0",
     "description": "Portfolio to showcase some of the work I developed during my time in Laboratoria's bootcamp.",
     "main": "app.js",
-    "scripts": {
-        "start": "node server.js"
-    },
+    "scripts": {},
     "repository": {
         "type": "git",
         "url": "git+https://github.com/itsandromeda/Portfolio.git"
@@ -31,9 +29,6 @@
         "url": "https://github.com/itsandromeda/Portfolio/issues"
     },
     "homepage": "https://github.com/itsandromeda/Portfolio#readme",
-    "dependencies": {
-        "express": "^4.15.3"
-    },
     "devDependencies": {
         "body-parser": "^1.17.2",
         "bootstrap": "^3.3.7",

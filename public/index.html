@@ -13,18 +13,16 @@
     <meta property="og:image" content="img/annia_j_flores_thumbnail.png">
     <meta property="og:title" content="Annia J. Flores, Front-end Developer">
     <meta property="og:site_name" content="Portafolio">
-    <meta property="og:description" content="Front-end Developer egresada de Laborat547oria en Lima, Perú.">
+    <meta property="og:description" content="Front-end Developer egresada de Laboratoria en Lima, Perú.">
     <!-- twitter card-->
     <meta name="twitter:card" content="@AnniaJFlores">
     <meta name="twitter:site" content="@AnniaJFlores">
     <meta name="twitter:title" content="Annia J. Flores, Front-end Developer">
-    <meta name="twitter:description" content="Front-end Developer egresada de Laborat547oria en Lima, Perú.">
+    <meta name="twitter:description" content="Front-end Developer egresada de Laboratoria en Lima, Perú.">
     <meta name="twitter:image" content="img/annia_j_flores_thumbnail.png">
     <meta name="twitter:url" content="https://itsandromeda.heroku.com">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap -->
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300,300i,700" rel="stylesheet">
     <link rel="icon" href="img/icon_annia.png">
@@ -34,10 +32,10 @@
 <body>
     <div class="wrapper">
         <header class="home">
-            <section class="container parallax-section text-center">
+            <section class="container-fluid parallax-section text-center">
                 <nav id="navbar" class="navbar">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">A</a>
+                        <a class="navbar-brand" href="#"><img src="img/icon_white.png"></a>
                         <div class="home__lang">
                             <a href="index.html">ES </a>
                             <span> / </span>
@@ -46,17 +44,19 @@
                     </div>
                     <div class="home__sections">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">TRABAJOS</a></li>
-                            <li><a href="#">SOBRE MÍ</a></li>
-                            <li><a href="#">CONTACTO</a></li>
+                            <li><a class="work" href="#work">TRABAJOS</a></li>
+                            <li><a class="about" href="#about">SOBRE MÍ</a></li>
+                            <li><a class="contact" href="#contact">CONTACTO</a></li>
                         </ul>
                     </div>
                 </nav>
                 <div class="home__inner">
-                    <h1>ANNIA</h1>
+                    <div class="home__logo">
+                        <img class="img-responsive" src="img/annia.png" alt="Annia">
+                    </div>
                     <p>FRONT - END DEVELOPER, LIMA - PERÚ</p>
                     <form target="_blank" method="get" action="/annia-j-flores_resume.pdf">
-                        <button class="btn home__button" type="submit">Descargar CV</button>
+                        <button class="btn home__button animate-flicker" type="submit">Descargar CV</button>
                     </form>
                 </div>
             </section>
@@ -67,7 +67,7 @@
                 <div class="row">
                     <div class="small-grid__box--dark col-md-6">
                         <h3>WANDERLUST</h3>
-                        <p>Plataforma desarrollada en 48 horas de idea a producto, la cual te permite crear pinboards con fotos y videos. Ganador de un reconocimiento por innovación en Laboratoria.</p>
+                        <p>Plataforma desarrollada en 48 horas de idea a producto, la cual te permite crear pinboards con fotos y videos. Ganador de un reconocimiento por innovación en el reto Proyecto X de Laboratoria.</p>
                         <button class="btn">HTML5, CSS3 &amp; JavaScript</button>
                     </div>
                     <div class="small-grid__box--light col-md-6">
@@ -84,15 +84,24 @@
                     </div>
                     <div class="small-grid__box--dark col-md-6">
                         <h3>PORTAFOLIO</h3>
-                        <p>El proceso creativo y desarrollo de este portafolio, donde hice uso de la mayoría de herramientas aprendidas en Laboratoria.</p>
+                        <p>El proceso creativo y de desarrollo de este portafolio, donde hice uso de la mayoría de herramientas aprendidas en Laboratoria.</p>
                         <button class="btn">JavaScript, Bootstrap, GULP &amp; SASS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="small-grid">
+            <div class="container">
+                <h2>SOBRE MÍ</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="img-circle img-responsive" src="img/annia_j_flores_about_me_thumbnail.jpg" alt="Annia J. Flores avatar">
                     </div>
                 </div>
             </div>
         </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bundle.js"></script>
 </body>
 

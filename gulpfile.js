@@ -100,13 +100,6 @@ gulp.task('html-watch', ['html'], (done) => {
 });
 
 gulp.task('serve', () => {
-    /*browserSync.init({
-        port: 3005,
-        proxy: {
-            target: 'localhost:3000',
-            ws: true
-        }
-    });*/
     browserSync.init({
         server: {
             baseDir: config.dist
