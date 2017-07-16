@@ -25,9 +25,17 @@
 }
 
 .navbar-fixed {
-    position: fixed;
     width: 100%;
-    height: 60px;
     background: white;
     z-index: 10;
+    position: fixed;
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 65px;
+    }
+    .container-fluid::before,
+    .container-fluid::after {
+        content: normal;
+    }
 }
