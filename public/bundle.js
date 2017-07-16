@@ -8,7 +8,7 @@
     }
 });*/
 
-$('.work').click('a', function (e) {
+$('.main-nav').click('a', function (e) {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top

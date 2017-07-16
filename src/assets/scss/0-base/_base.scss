@@ -46,14 +46,10 @@ a:hover {
     color: #DD4056;
 }
 
-.big-text {
-    font-size: 4em;
+ul li {
+    list-style: none;
 }
 
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
+ul {
+    padding: 0;
 }
