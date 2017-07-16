@@ -8,6 +8,9 @@
         background-attachment: fixed;
         background-position: 100% 50%;
         background-repeat: no-repeat;
+        webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
         min-height: calc(100vh - 120px);
         position: relative;
@@ -62,8 +65,11 @@
         .parallax-section {
             background: url(img/header_background.jpg);
             background-attachment: fixed;
-            background-position: 48%;
+            background-position: 48% center;
             background-repeat: no-repeat;
+            webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             background-size: cover;
             min-height: 100vh;
             position: relative;
