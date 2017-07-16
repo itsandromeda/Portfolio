@@ -32,8 +32,8 @@
 <body>
     <nav class="navbar-fixed hidden-xs">
         <div class="container-fluid">
-            <span>ANNIA J. FLORES | FRONT - END DEVELOPER</span>
-            <a href="mailto:itsandromeda@gmail.com" title="Mi correo electrónico"><i class="fa fa-envelope-o"></i> ¡Escríbeme!</a>
+            <span class="nav-text">ANNIA J. FLORES | FRONT - END DEVELOPER JR.</span>
+            <a class="nav-text" href="mailto:itsandromeda@gmail.com" title="Mi correo electrónico"><i class="fa fa-envelope-o"></i> ¡ESCRÍBEME!</a>
         </div>
     </nav>
     <div class="wrapper">
@@ -105,16 +105,19 @@
                         <img class="img-circle img-responsive" src="img/annia_j_flores_about_me_thumbnail.jpg" alt="Annia J. Flores avatar">
                     </div>
                     <div class="col-xs-12 col-md-9">
-                        <div class="col-md-12">
+                        <div class="about__short col-md-8">
                             <h4><strong><em>Versión corta</em></strong></h4>
                             <p>¡Hola! Mi nombre es Annia, soy una <em>front-end developer</em> egresada de la 6° promoción del bootcamp de <a href="http://laboratoria.la/" target="_blank">Laboratoria</a> y actualmente resido en Lima, Perú. Me interesan las <strong>causas sociales</strong>, el <strong>emprendimiento</strong>, <strong>e-commerce</strong>, <strong>e-learning</strong>, <strong>diseño</strong>, <strong>UX</strong>, <strong>branding</strong>, las <strong>buenas prácticas</strong> en todo lo que hago (entre otros más) y hablo un <strong>inglés</strong> bastante fluido desde muy joven.
                                 <br>
-                                <br>Estas son algunas de las herramientas y lenguajes que he aprendido a manejar en los últimos 6 meses (enero-julio 2017):</p>
+                                <br>En el desplegable de la derecha podrás ver algunas de las herramientas y lenguajes que he aprendido a manejar en los últimos 6 meses (enero-julio 2017).</p>
                         </div>
-                        <div class="col-md-12">
-                            <div class="col-xs-12 col-md-6">
-                                <h3>Skill set</h3>
-                                <ul>
+                        <div class="about__short col-md-4">
+                            <div class="col-md-12">
+                                <button data-toggle="collapse" data-target="#skill-set">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <span>Skill set</span>
+                                </button>
+                                <ul id="skill-set" class="collapse">
                                     <li>HTML5</li>
                                     <li>CSS3</li>
                                     <li>Materialize</li>
@@ -126,9 +129,12 @@
                                     <li>HTTP JSON &amp; consumo de APIs</li>
                                 </ul>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                                <h3>Tools</h3>
-                                <ul>
+                            <div class="col-md-12">
+                                <button data-toggle="collapse" data-target="#tools">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <span>Tools</span>
+                                </button>
+                                <ul id="tools" class="collapse">
                                     <li>Brackets</li>
                                     <li>Git</li>
                                     <li>GitHub</li>
@@ -140,14 +146,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <h4><strong><em>Versión larga</em></strong></h4>
+                    <div class="about__long col-md-12">
+                        <h4><strong><em>Versión larga</em></strong> <a href="#interests" class="skip">(Saltar)</a></h4>
                         <p>Mi primer trabajo fue a los 19 años cuando <strong>decidí</strong> hacer de mi hobby un negocio y abrí una tienda de accesorios hechos a mano en Facebook con intenciones de aprender más sobre el mundo de las ventas por internet. Fue una experiencia bastante enriquecedora y llena de aprendizaje, en la que desarrollé un fuerte interés por el <strong>emprendimiento</strong>, <strong>branding</strong> y la forma en la que mis clientes experimentaban el proceso de compras en línea y de forma presencial, (cosa que más adelante despertaría un interés aún mayor por el <strong>UX</strong>). Ese proyecto hizo que desarrollara aún más mis habilidades para la <strong>organización</strong>, <strong>planeación</strong>, mi enfoque al <strong>detalle</strong> y la <strong>fotografía</strong>.</p>
                         <p>He aprendido muchas cosas por mi propia cuenta, una de ellas fue el <strong>inglés</strong>, el cual empecé a hablar fluidamente desde los 14 años. Mi interés por las causas sociales despertó luego de eso, ya que aprender el idioma me permitió el acceso a muchas fuentes más de información en internet. Antes de ingresar a Laboratoria empecé otro emprendimiento, esta vez con intenciones de aplicar lo aprendido en el pasado, así como tambien de enfocarme en promover causas sociales cercanas a mi, relacionadas a la <strong>contaminación ambiental</strong>, <strong>sostenibilidad</strong> y <strong>productos libres de crueldad</strong>.</p>
                         <p>En la actualidad busco ser parte de un equipo impulsado por una cultura de diseño y metodologías ágiles en el cual pueda desarrollarme como front-end developer. Una de mis metas a largo plazo es ser parte de la creación de productos que generen oportunidades y solucionen problemas del mundo.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div id="interests" class="row">
                     <h3>Intereses</h3>
                     <div class="col-md-12">
                         <p>Me interesa mucho el e-learning, aprender sobre front-end frameworks para agilizar mi ritmo de trabajo y mejores prácticas en el ámbito; manejo de redes sociales, diseño y superación personal continua.</p>
@@ -176,13 +182,29 @@
     <footer class="footer">
         <div class="container-fluid">
             <ul>
-                <li><a href="#"><i class="fa fa-github"></i></a></li>
-                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+                <li>
+                    <a href="https://github.com/itsandromeda" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/user/12146235067" target="_blank">
+                        <i class="fa fa-spotify"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/itsandromeda/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/ItsAndromeda/" target="_blank">
+                        <i class="fa fa-codepen"></i>
+                    </a>
+                </li>
             </ul>
-            <a href="#" class="top">Volver arriba</a>
-            <span class="hidden-xs">Annia J. Flores - 2017</span>
+            <a href="#" class="top footer-text">Volver arriba</a>
+            <span class="hidden-xs">ANNIA J.FLORES - 2017</span>
         </div>
         </div>
     </footer>

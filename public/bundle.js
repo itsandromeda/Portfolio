@@ -3,7 +3,6 @@ $(".top").click(function () {
     $("html, body").animate({
         scrollTop: 0
     }, 1000);
-    return false;
 });
 
 $('.main-nav').click('a', function (e) {
@@ -11,6 +10,24 @@ $('.main-nav').click('a', function (e) {
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1000);
+});
+
+$(".skip").click(function (e) {
+    e.preventDefault();
+    $("html, body").animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+});
+
+$(window).scroll(_ = () => {
+    if ($(window).scrollTop() >= 30) {
+        $('.nav-text').addClass('drop-animate');
+        $('.footer-text').addClass('lift-animate');
+    } else {
+
+        $('.nav-text').removeClass('drop-animate');
+        $('.footer-text').removeClass('lift-animate');
+    }
 });
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
