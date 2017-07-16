@@ -34,20 +34,20 @@
 <body>
     <div class="wrapper">
         <header class="home">
-            <section class="container parallax-section text-center">
+            <section class="container-fluid parallax-section text-center">
                 <nav id="navbar" class="navbar">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">A</a>
+                        <a class="navbar-brand" href="#"><img src="img/icon_white.png"></a>
                         <div class="home__lang">
                             <a href="index.html">ES </a>
                             <span> / </span>
                             <a href="index-eng.html">ENG</a>
                         </div>
                     </div>
-                    <div class="home__sections">
+                    <div class="home__sections hidden-xs">
                         <ul class="nav navbar-nav">
                             <li><a class="work" href="#work">WORK</a></li>
-                            <li><a class="about" href="#about">ABOUT ME</a></li>
+                            <li><a class="about" href="#about">ABOUT</a></li>
                             <li><a class="contact" href="#contact">CONTACT</a></li>
                         </ul>
                     </div>
@@ -56,7 +56,7 @@
                     <div class="home__logo">
                         <img class="img-responsive" src="img/annia.png" alt="Annia">
                     </div>
-                    <p>FRONT - END DEVELOPER, LIMA - PERU</p>
+                    <p class="hidden-xs">FRONT - END DEVELOPER, LIMA - PERU</p>
                     <form target="_blank" method="get" action="/annia-j-flores_resume.pdf">
                         <button class="btn home__button animate-flicker" type="submit">Download CV</button>
                     </form>
@@ -64,37 +64,52 @@
             </section>
         </header>
         <section id="work" class="small-grid">
-            <div class="container">
-                <h2>RECENT WORK</h2>
+            <div class="container-fluid">
+                <h2>RECENT PROJECTS</h2>
                 <div class="row">
-                    <div class="small-grid__box--dark col-md-6">
+                    <div class="small-grid__box--dark col-xs-12 col-md-6">
                         <h3>WANDERLUST</h3>
-                        <p>Web platform built in 48 hours from idea to product that allows you to create pinboards and upload video and image files. Winning project of innovation in Laboratoria's X Project challenge .</p>
+                        <p>Web platform built in 48 hours from idea to product that allows you to create pinboards and upload video and image files. Winning project of innovation in Laboratoria's X Project challenge.</p>
                         <button class="btn">HTML5, CSS3 &amp; JavaScript</button>
                     </div>
-                    <div class="small-grid__box--light col-md-6">
+                    <div class="small-grid__box--light col-xs-12 col-md-6">
                         <h3>PINTEREST</h3>
                         <p>Pinterest replica filled with data from a particular board accessed through the Pinterest API.</p>
                         <button class="btn">jQuery, Pinterest API, GULP &amp; SASS</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-grid__box--light col-md-6">
+                    <div class="small-grid__box--light col-xs-12 col-md-6">
                         <h3>TRELLO</h3>
                         <p>Trello clone that allows you to organize projects through boards, lists and cards. I won a Laboratoria MOST PROACTIVE badge on the sprint thanks to this project.</p>
                         <button class="btn">HTML5, CSS3 &amp; JavaScript</button>
                     </div>
-                    <div class="small-grid__box--dark col-md-6">
-                        <h3>PORTFOLIO</h3>
-                        <p>Creative &amp; development process of my personal portfolio, where I used most of the tools learned in Laboratoria.</p>
+                    <div class="small-grid__box--dark col-xs-12 col-md-6">
+                        <h3>PORTAFOLIO</h3>
+                        <p>Creative & development process of my personal portfolio, where I used most of the tools learned in Laboratoria.</p>
                         <button class="btn">JavaScript, Bootstrap, GULP &amp; SASS</button>
                     </div>
                 </div>
             </div>
         </section>
+        <section id="about">
+            <div class="container-fluid">
+                <h2>ABOUT ME</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <img class="img-circle img-responsive" src="img/annia_j_flores_about_me_thumbnail.jpg" alt="Annia J. Flores avatar">
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <p>Hello! My name is Annia, I'm a front-end developer &amp; Laboratoria graduate currently living in Lima, Peru.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <h3>Skill set</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="bundle.js"></script>
 </body>
 

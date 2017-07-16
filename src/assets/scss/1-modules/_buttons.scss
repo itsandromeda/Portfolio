@@ -71,3 +71,25 @@
     -o-animation: flickerAnimation 1.5s infinite;
     animation: flickerAnimation 1.5s infinite;
 }
+
+@media only screen and (max-width: 768px) {
+    .home {
+        &__button {
+            background-color: transparent;
+            font-family: $font-primary;
+            color: $palette-primary !important;
+            border: 1px solid $palette-primary;
+            margin-top: 25%;
+            width: 65%;
+        }
+    }
+    .small-grid {
+        button {
+            text-align: center;
+            position: absolute;
+            bottom: 25px;
+            width: 80%;
+            transform: translate(-50%, 0);
+        }
+    }
+}

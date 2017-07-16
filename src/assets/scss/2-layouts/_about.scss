@@ -1,0 +1,24 @@
+#about {
+    .container-fluid {
+        padding: 5% 7% 0 7%;
+    }
+    h3 {
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about {
+        margin-top: 10%;
+        padding: 5%;
+        .container-fluid {
+            padding: 0;
+        }
+        img {
+            margin-bottom: 10%;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}

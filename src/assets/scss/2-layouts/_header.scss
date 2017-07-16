@@ -3,15 +3,12 @@
 }
 
 .home {
-    .container {
-        width: 100%;
-    }
     .parallax-section {
         background: url(img/header_background.jpg);
         background-attachment: fixed;
         background-position: 100% 50%;
         background-repeat: no-repeat;
-        background-size: 101%;
+        background-size: cover;
         min-height: calc(100vh - 120px);
         position: relative;
         opacity: 0.9;
@@ -29,7 +26,7 @@
     }
     &__logo {
         width: 32.4%;
-        margin:auto;
+        margin: auto;
         margin-bottom: 5px;
     }
     &__lang {
@@ -47,6 +44,58 @@
         }
         a:hover {
             opacity: 1;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-brand {
+        float: left;
+        padding: 0;
+        margin-top: 15px;
+    }
+    .home {
+        .parallax-section {
+            background: url(img/header_background.jpg);
+            background-attachment: fixed;
+            background-position: 48%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            opacity: 0.9;
+        }
+        &__logo {
+            width: 65%;
+            margin: auto;
+            margin-bottom: 5%;
+        }
+        &__lang {
+            font-size: 0.5em;
+            margin-top: 15px;
+            float: right;
+        }
+        &__inner {
+            position: absolute;
+            top: 44%;
+            left: 0;
+            right: 0;
+        }
+        &__sections {
+            float: right;
+            a {
+                background-color: transparent !important;
+                color: $palette-primary;
+                opacity: 0.5;
+                transition: opacity 0.5s ease;
+            }
+            a:hover {
+                opacity: 1;
+            }
         }
     }
 }

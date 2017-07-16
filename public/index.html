@@ -42,7 +42,7 @@
                             <a href="index-eng.html">ENG</a>
                         </div>
                     </div>
-                    <div class="home__sections">
+                    <div class="home__sections hidden-xs">
                         <ul class="nav navbar-nav">
                             <li><a class="work" href="#work">TRABAJOS</a></li>
                             <li><a class="about" href="#about">SOBRE MÍ</a></li>
@@ -54,7 +54,7 @@
                     <div class="home__logo">
                         <img class="img-responsive" src="img/annia.png" alt="Annia">
                     </div>
-                    <p>FRONT - END DEVELOPER, LIMA - PERÚ</p>
+                    <p class="hidden-xs">FRONT - END DEVELOPER, LIMA - PERÚ</p>
                     <form target="_blank" method="get" action="/annia-j-flores_resume.pdf">
                         <button class="btn home__button animate-flicker" type="submit">Descargar CV</button>
                     </form>
@@ -62,27 +62,27 @@
             </section>
         </header>
         <section id="work" class="small-grid">
-            <div class="container">
+            <div class="container-fluid">
                 <h2>TRABAJOS RECIENTES</h2>
                 <div class="row">
-                    <div class="small-grid__box--dark col-md-6">
+                    <div class="small-grid__box--dark col-xs-12 col-md-6">
                         <h3>WANDERLUST</h3>
                         <p>Plataforma desarrollada en 48 horas de idea a producto, la cual te permite crear pinboards con fotos y videos. Ganador de un reconocimiento por innovación en el reto Proyecto X de Laboratoria.</p>
                         <button class="btn">HTML5, CSS3 &amp; JavaScript</button>
                     </div>
-                    <div class="small-grid__box--light col-md-6">
+                    <div class="small-grid__box--light col-xs-12 col-md-6">
                         <h3>PINTEREST</h3>
                         <p>Recreación de la plataforma original trayendo datos del API de la misma.</p>
                         <button class="btn">jQuery, Pinterest API, GULP &amp; SASS</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-grid__box--light col-md-6">
+                    <div class="small-grid__box--light col-xs-12 col-md-6">
                         <h3>TRELLO</h3>
                         <p>Réplica de la web original que te permite organizar proyectos en boards, listas y tarjetas. Me hizo ganadora de un reconocimiento en Laboratoria.</p>
                         <button class="btn">HTML5, CSS3 &amp; JavaScript</button>
                     </div>
-                    <div class="small-grid__box--dark col-md-6">
+                    <div class="small-grid__box--dark col-xs-12 col-md-6">
                         <h3>PORTAFOLIO</h3>
                         <p>El proceso creativo y de desarrollo de este portafolio, donde hice uso de la mayoría de herramientas aprendidas en Laboratoria.</p>
                         <button class="btn">JavaScript, Bootstrap, GULP &amp; SASS</button>
@@ -90,12 +90,18 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="small-grid">
-            <div class="container">
+        <section id="about">
+            <div class="container-fluid">
                 <h2>SOBRE MÍ</h2>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-xs-12 col-md-3">
                         <img class="img-circle img-responsive" src="img/annia_j_flores_about_me_thumbnail.jpg" alt="Annia J. Flores avatar">
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <p>¡Hola! Mi nombre es Annia, soy una front-end developer egresada de la 6° promoción del bootcamp de Laboratoria, actualmente residiendo en Lima, Perú.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <h3>Skill set</h3>
                     </div>
                 </div>
             </div>

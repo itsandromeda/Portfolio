@@ -1,12 +1,7 @@
 .small-grid {
     margin-top: 5%;
-    .container {
-        padding: 64px 15px 0 15px;
-    }
-    h2 {
-        font-family: $font-tertiary;
-        font-size: 2em;
-        margin-bottom: 1.4em;
+    .container-fluid {
+        padding: 5% 7% 0 7%;
     }
     .row div {
         background-color: $palette-primary;
@@ -16,15 +11,9 @@
         cursor: pointer;
         opacity: 0.9;
         text-align: center;
-        h3 {
-            font-family: $font-tertiary;
-            font-weight: bold;
-            font-size: 2.5em;
-            text-align: left;
-        }
         p {
             font-family: $font-paragraph;
-            font-size: 0.95em;
+            font-size: 0.90em;
             text-align: left;
         }
     }
@@ -32,6 +21,7 @@
         z-index: 15;
         opacity: 1;
     }
+    //wanderlust
     &__box--dark:first-child {
         background-size: cover;
         color: #DD4056;
@@ -47,6 +37,9 @@
     }
     &__box--dark:first-child:hover {
         background-color: #512548;
+        h3 {
+            color: #DD4056;
+        }
         button {
             border: 1px solid #DD4056;
             background-color: transparent;
@@ -79,6 +72,7 @@
             border: 1px solid $palette-primary;
         }
     }
+    //trello
     &__box--light:first-child {
         color: #301C41;
         border: 2px solid #863150;
@@ -121,6 +115,119 @@
         button:hover {
             color: $palette-primary;
             border: 1px solid $palette-primary;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-family: 'Bebas Neue Book', sans-serif;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    #work {
+        margin-top: 10%;
+        padding: 5%;
+    }
+    .small-grid {
+        margin-top: 5%;
+        .container-fluid {
+            padding: 0;
+        }
+        .row div {
+            background-color: $palette-primary;
+            height: 280px;
+            border-radius: 0;
+            padding: 10px 20px;
+            position: relative;
+            opacity: 0.9;
+            color: #DD4056;
+            border: 2px solid #301C41;
+            transition: box-shadow 0.8s ease-in-out, opacity 0.8s, all 0.8s;
+            button {
+                background-color: transparent;
+                border: 1px solid #301C41;
+                font-size: 0.75em;
+            }
+            h3 {
+                font-family: $font-tertiary;
+                font-weight: bold;
+                font-size: 2.3em;
+            }
+            p {
+                font-family: $font-paragraph;
+                font-size: 0.85em;
+            }
+        }
+        &__box--dark:first-child {
+            border-bottom: 0 !important;
+            h3 {
+                color: #301C41;
+            }
+            button {
+                background-color: transparent;
+                border: 1px solid #301C41;
+            }
+        }
+        //trello
+        &__box--light:first-child {
+            border-top: 0 !important;
+            border-bottom: 0 !important;
+            h3 {
+                color: #301C41;
+            }
+            button {
+                background-color: transparent;
+                border: 1px solid #301C41;
+            }
+        }
+        &__box--light:first-child:hover {
+            background-color: #863150;
+            color: #f3f3f3;
+            h3 {
+                color: #f3f3f3;
+            }
+            button {
+                border: 1px solid #f3f3f3;
+                background-color: transparent;
+            }
+            button:hover {
+                background-color: $palette-primary;
+                color: #863150;
+            }
+        }
+        &__box--dark:last-child {
+            h3 {
+                color: #DD4056;
+            }
+            button {
+                background-color: transparent;
+                border: 1px solid #301C41;
+            }
+        }
+        //pinterest
+        &__box--light:last-child {
+            h3 {
+                color: #DD4056;
+            }
+            button {
+                background-color: transparent;
+                border: 1px solid #301C41;
+            }
+        }
+        &__box--light:last-child:hover {
+            h3 {
+                color: #301C41;
+            }
+            color: #301C41;
+            button {
+                border: 1px solid #301C41;
+                background-color: transparent;
+            }
+            button:hover {
+                color: $palette-primary;
+                border: 1px solid $palette-primary;
+            }
         }
     }
 }
