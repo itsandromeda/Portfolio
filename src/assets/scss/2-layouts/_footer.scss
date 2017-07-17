@@ -26,8 +26,42 @@
     }
 }
 
+.header-bot {
+    .parallax-section {
+        background: url(img/header_background.jpg);
+        background-attachment: fixed;
+        background-position: 40% 80%;
+        background-repeat: no-repeat;
+        webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        -o-background-size: 120%;
+        background-size: 120%;
+        min-height: 45vh;
+        position: relative;
+        opacity: 1;
+    }
+    &__inner {
+        font-family: $font-quaternary;
+        color: $palette-primary;
+        position: absolute;
+        top: 42%;
+        left: 0;
+        right: 0;
+        p {
+            letter-spacing: 2px;
+        }
+    }
+    &__logo {
+        width: 30%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+}
+
 .download {
     background: $palette-dark;
+    text-align: center;
+    color: $palette-primary;
     @extend %flex-center;
     padding: 50px 0;
     button {
@@ -36,10 +70,8 @@
     }
     i {
         display: block;
-        text-align: center;
-        color: $palette-primary;
     }
-    i:first-child {
+    .fa-long-arrow-down {
         margin-bottom: 20px;
     }
     i:last-child {
@@ -111,6 +143,36 @@
         }
         i:last-child {
             margin-top: 15px;
+        }
+    }
+    .home {
+        .parallax-section {
+            background: url(img/header_background.jpg);
+            background-position: 45% 50%;
+            background-repeat: no-repeat;
+            webkit-background-size: 150%;
+            -moz-background-size: 150%;
+            -o-background-size: 150%;
+            background-size: 150%;
+            min-height: 35vh;
+            position: relative;
+            opacity: 1;
+        }
+        &__inner {
+            font-family: $font-quaternary;
+            color: $palette-primary;
+            position: absolute;
+            top: 41%;
+            left: 0;
+            right: 0;
+            p {
+                letter-spacing: 2px;
+            }
+        }
+        &__logo {
+            width: 50%;
+            margin: auto;
+            margin-bottom: 5px;
         }
     }
 }

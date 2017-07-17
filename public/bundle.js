@@ -30,18 +30,15 @@ $(window).scroll(_ = () => {
     }
 });
 
-/*utils*/
-const getImages = (user) => {
-    return new Promise((resolve, reject) => {
-        $.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=40427461.890df3d.70cb025431904ddf8f46a57ac32cbb2e', (response, req, estado) => {
-            if (estado.status != 200) {
-                reject(new Error("Error al obtener datos"));
-            } else {
-                resolve(response);
-            }
-        });
-    });
-};
+$.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=40427461.890df3d.70cb025431904ddf8f46a57ac32cbb2e', (data, status) => {
+    if (data === null) {
+        console.log("error");
+        //reject(new Error("Error al obtener datos"));
+    } else {
+        console.log(data);
+        //resolve(response);
+    }
+});
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
