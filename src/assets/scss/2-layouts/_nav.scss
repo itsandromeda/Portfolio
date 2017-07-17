@@ -29,6 +29,10 @@
     background: white;
     z-index: 10;
     position: fixed;
+    a,
+    span {
+        font-size: 0.9em;
+    }
     .container-fluid {
         display: flex;
         justify-content: space-between;
