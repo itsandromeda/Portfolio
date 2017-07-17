@@ -29,16 +29,6 @@ $(window).scroll(_ = () => {
         $('.footer-text').removeClass('lift-animate');
     }
 });
-
-$.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=40427461.890df3d.70cb025431904ddf8f46a57ac32cbb2e', (data, status) => {
-    if (data === null) {
-        console.log("error");
-        //reject(new Error("Error al obtener datos"));
-    } else {
-        console.log(data);
-        //resolve(response);
-    }
-});
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
