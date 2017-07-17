@@ -18,16 +18,7 @@
 }
 
 #about {
-    .skill-btn {
-        background-color: $palette-btn;
-        color: $palette-primary;
-        border-radius: 0 !important;
-        text-align: left;
-        width: 100%;
-        padding: 2% 5%;
-        border: 0;
-    }
-    .tool-btn {
+    .collapse-btn {
         background-color: $palette-btn;
         color: $palette-primary;
         border-radius: 0 !important;
