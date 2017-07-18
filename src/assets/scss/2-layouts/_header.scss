@@ -33,16 +33,19 @@
         margin-bottom: 5px;
     }
     &__lang {
-        font-size: 0.5em;
+        font-size: 0.8em;
         display: inline-block;
-        margin-top: 15px;
+        margin-top: 14px;
+        a {
+            opacity: 1;
+        }
     }
     &__sections {
         float: right;
         a {
             background-color: transparent !important;
             color: $palette-primary;
-            opacity: 0.5;
+            opacity: 0.8;
             transition: opacity 0.5s ease;
         }
         a:hover {

@@ -5,17 +5,12 @@
     a:visited {
         color: #DD4056;
     }
-    h2 {
-        font-family: $font-tertiary;
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
     p {
         margin-bottom: 30px;
     }
     .row div {
         background-color: $palette-primary;
-        height: 210px;
+        height: 205px;
         padding: 10px 30px;
         position: relative;
         cursor: pointer;
