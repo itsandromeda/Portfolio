@@ -39,6 +39,11 @@
             margin-bottom: 5px;
         }
     }
+    &__long {
+        i {
+            margin-left: 2em;
+        }
+    }
 }
 
 #interests {
@@ -47,17 +52,21 @@
 
 @media only screen and (max-width: 768px) {
     #about {
-        margin-top: 10%;
-        padding: 5%;
+        margin-top: 5%;
+        padding: 0 5%;
         padding-bottom: 0;
         .container-fluid {
             padding: 0;
         }
         img {
+            margin-bottom: 5%;
+        }
+        button {
             margin-bottom: 10%;
         }
-        p {
-            text-align: center;
+        [class*="col-"] {
+            padding: 0;
+            position: static;
         }
         .home {
             .parallax-section {

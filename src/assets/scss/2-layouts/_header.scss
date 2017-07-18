@@ -52,6 +52,16 @@
             opacity: 1;
         }
     }
+    &__more {
+        margin-top: 40px;
+        opacity: 0.8;
+        i {
+            font-size: 1.8em;
+        }
+        p {
+            font-size: 0.9em;
+        }
+    }
 }
 
 .nav-text {
