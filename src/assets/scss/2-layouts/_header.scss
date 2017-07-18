@@ -53,7 +53,7 @@
         }
     }
     &__more {
-        margin-top: 40px;
+        margin-top: 20px;
         opacity: 0.8;
         i {
             font-size: 1.8em;
@@ -73,6 +73,7 @@
     position: relative;
     top: -15px;
 }
+
 .drop-animate {
     opacity: 1;
     -moz-transform: translate3d(0px, 15px, 0px);
