@@ -63,6 +63,7 @@
     text-align: center;
     color: $palette-primary;
     @extend %flex-center;
+    flex-direction: column;
     padding: 50px 0;
     button {
         border-radius: 0 !important;
@@ -74,8 +75,20 @@
     .fa-long-arrow-down {
         margin-bottom: 20px;
     }
-    i:last-child {
+    .fa-long-arrow-up {
         margin-top: 20px;
+    }
+    div {
+        position: relative;
+        top: 30px;
+        align-self: flex-start;
+        margin-top: 10px;
+        padding-left: 30px;
+        p {
+            font-size: 0.8em;
+            color: #e3e3e3;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -143,6 +156,18 @@
         }
         i:last-child {
             margin-top: 15px;
+        }
+        div {
+            position: relative;
+            top: 30px;
+            align-self: flex-start;
+            margin-top: 10px;
+            padding: 10px;
+            p {
+                font-size: 0.8em;
+                color: #e3e3e3;
+                margin-bottom: 0;
+            }
         }
     }
     .header-bot {

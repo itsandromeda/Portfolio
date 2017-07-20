@@ -8,6 +8,12 @@
     a:visited {
         color: #DD4056;
     }
+    .img-right {
+        height: 250px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
     .home {
         .parallax-section {
             background: url(img/header_background.jpg);
@@ -67,6 +73,10 @@
         [class*="col-"] {
             padding: 0;
             position: static;
+        }
+        .img-right {
+            height: 250px;
+            float: none;
         }
         .home {
             .parallax-section {

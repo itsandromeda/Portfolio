@@ -5,6 +5,12 @@ $(".top").click(function () {
     }, 1000);
 });
 
+$("#jump").click(function () {
+    $("html, body").animate({
+        scrollTop: 580
+    }, 1000);
+});
+
 $('.main-nav').click('a', function (e) {
     e.preventDefault();
     $('html, body').animate({
