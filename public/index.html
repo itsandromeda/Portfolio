@@ -89,9 +89,9 @@
                 </div>
                 <div class="row">
                     <div class="small-grid__box--light col-xs-12 col-md-6">
-                        <h3>TRELLO</h3>
-                        <p>Réplica de la web original que te permite organizar proyectos en boards, listas y tarjetas. Me hizo ganadora de un reconocimiento en Laboratoria.</p>
-                        <button type="button" class="btn" data-toggle="modal" data-target="#trello-modal">HTML5, CSS3 &amp; JavaScript</button>
+                        <h3>YAPE</h3>
+                        <p>Réplica de la aplicación del BCP, este proyecto es una simulación de transferencias de dinero desde un dispositivo móvil.</p>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#trello-modal">API local, Componentes &amp; jQuery</button>
                     </div>
                     <div class="small-grid__box--dark col-xs-12 col-md-6">
                         <h3>THIS IS NEAT</h3>
@@ -229,7 +229,7 @@
                         <div class="modal-header row">
                             <div class="col-md-12">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h3 class="modal-title">TRELLO</h3>
+                                <h3 class="modal-title">YAPE</h3>
                             </div>
                         </div>
                         <div class="modal-body row">
@@ -237,27 +237,54 @@
                                 <h4>Cliente</h4>
                                 <p>Laboratoria</p>
                                 <h4>Mi función</h4>
-                                <p>Recrear la plataforma Trello.</p>
+                                <ul>
+                                    <li>Trabajar con componentes.</li>
+                                    <li>Usar la data del API local.</li>
+                                    <li>Recrear el diseño especificado.</li>
+                                </ul>
                                 <h4>Tecnologías</h4>
                                 <ul>
                                     <li>Vanilla JavaScript</li>
                                     <li>HTML5</li>
                                     <li>CSS3</li>
+                                    <li>Materialize</li>
+                                    <li>npm</li>
                                 </ul>
-                                <h4>Reconocimientos</h4>
-                                <p>El badge "La más proactiva" en el sprint 2 del bootcamp de Laboratoria.</p>
                             </div>
                             <div class="col-md-8 col-xs-12">
                                 <div class="col-md-12">
-                                    <p>El trabajo original era recrear una especie de Trello exclusivamente con JavaScript, no era requisito usar HTML o CSS ya que esos temas nos enseñarían poseriormente en otros sprints.</p>
+                                    <p>En este proyecto puse a prueba todo lo que aprendí en el Sprint 5 en Laboratoria. Es una réplica de la aplicación del BCP, una simulación de transferencias de dinero desde un <strong>dispositivo móvil.</strong></p>
                                 </div>
                                 <div class="col-md-12">
                                     <h4>PROCESO</h4>
-                                    <p>Investigué sobre HTML y CSS lo suficiente para poder desarrollar una réplica de Trello y darle funcionalidad a los elementos con JavaScript. La réplica que desarrollé te permite agregar listas en el board creado por default. Fue el primer proyecto de maquetado que hice en el bootcamp y recibí un reconocimiento por mi proactividad.</p>
+                                    <p><strong>1° Hito:</strong></p>
+                                    <ul>
+                                        <li>-Clonar el proyecto</li>
+                                        <li>-Instalar con npm todas las dependencias</li>
+                                        <li>-Correr el API</li>
+                                        <li>-Estructurar el frontend del proyecto</li>
+                                        <li>-Pantalla 1: Debe tener un carousel de íconos y un botón de registro.</li>
+                                        <li>-Pantalla 2: Se debe poder ingresar un teléfono y poder aceptar los términos y condiciones. El botón de continuar sólo se activa cuando un teléfono es ingresado y los términos son aceptados. Cuando se hace click en continuar, el sistema debe enviar un request al API para registrar el teléfono y generar el código. Tener en cuenta que el API no permite más de 2 registros del mismo teléfono a la vez.</li>
+                                    </ul>
+                                    <br>
+                                    <p><strong>2° Hito:</strong></p>
+                                    <ul>
+                                        <li>Pantalla 3: Debe validar el código previamente generado en la pantalla anterior, el código es enviado mediante el API. Al ingresar un código válido la pantalla, salta a la siguiente pantalla. Debe haber un contador que a los 21 segundos llame al API para ingresar un nuevo código e invalidar el anterior.</li>
+                                        <li>Pantalla 4: Se deben poder ingresar mis datos de usuario. Sólo cuando todos mis datos están ingresados se debe activar el botón amarillo. Deben haber validaciones básicas (email) y la contraseña no debe poderse ver. Al hacer click sobre el botón, debe enviarse los datos al API y cuando regresa, debe pasar a la pantalla 5.</li>
+                                        <li>Pantalla 5: A los 3 segundos de mostrar esta pantalla, debe pasar a la siguiente.</li>
+                                    </ul>
+                                    <br>
+                                    <p><strong>3° Hito:</strong></p>
+                                    <ul>
+                                        <li>Pantalla 6: Se debe poder registrar una nueva tarjeta de crédito. Sólo se debe poder ingresar 16 números en el input de tarjeta. Sólo se debe poder ingresar meses (01 al 12). Sólo debe poder ingresar años futuros (del 17 al 24). El botón de registro sólo se activa si todos los campos han sido ingresados. Al hacer click en el botón nos manda a la página 7.</li>
+                                        <li>Pantalla 7: Se debe proder ingresar la contraseña. La contraseña debe ser de 4 dígitos. El botón de registro solo se activa si la contraseña ha sido ingresada. Al hacer click en el botón, debe enviar los datos al API y cuando regresa debe pasar a la pantalla final.
+                                        </li>
+                                        <li>Pantalla Final: Es la pantalla final a donde se llega después del registro. Esta pantalla no tiene funcionalidad activa: sólo debe mostrarse tal cual se ve.</li>
+                                    </ul>
                                 </div>
                                 <div class="col-md-12 modal__btns">
-                                    <a class="modal-btn" href="https://github.com/itsandromeda/Trello-Clone" target="_blank">Código</a>
-                                    <a class="modal-btn" href="https://itsandromeda.github.io/Trello-Clone/" target="_blank">Demo</a>
+                                    <a class="modal-btn" href="https://github.com/itsandromeda/Yape" target="_blank">Código</a>
+                                    <a class="modal-btn" href="https://yape-laboratoria.herokuapp.com/" target="_blank">Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -320,25 +347,29 @@
                         </button>
                         <div id="honors" class="skills-info collapse">
                             <ul>
-                                <li>
-                                    <p>LA MÁS PROACTIVA</p>
-                                    <p><i>feb. 2017</i></p>
+                               <li>
+                                    <p>TERCIO SUPERIOR - 6° PROMOCIÓN LABORATORIA</p>
+                                    <p><i>jul. 2017</i></p>
                                 </li>
                                 <li>
-                                    <p>MENCIÓN ESPECIAL POR INNOVACIÓN TECH</p>
-                                    <p><i>abr. 2017</i></p>
+                                    <p>BEST SQUAD</p>
+                                    <p><i>jul. 2017</i></p>
+                                </li>
+                                <li>
+                                    <p>BEST SQUAD</p>
+                                    <p><i>may. 2017</i></p>
                                 </li>
                                 <li>
                                     <p>JEDI MASTER</p>
                                     <p><i>may. 2017</i></p>
                                 </li>
                                 <li>
-                                    <p>BEST SQUAD</p>
-                                    <p><i>may. 2017</i></p>
+                                    <p>MENCIÓN ESPECIAL POR INNOVACIÓN TECH</p>
+                                    <p><i>abr. 2017</i></p>
                                 </li>
                                 <li>
-                                    <p>BEST SQUAD</p>
-                                    <p><i>jul. 2017</i></p>
+                                    <p>LA MÁS PROACTIVA</p>
+                                    <p><i>feb. 2017</i></p>
                                 </li>
                             </ul>
                         </div>
@@ -349,8 +380,8 @@
                                 <h4><strong><em>Versión corta</em></strong></h4>
                             </div>
                             <div class="col-md-7">
-                                <p>¡Hola! Mi nombre es Annia, soy una <em>front-end developer</em> egresada de la 6° promoción del bootcamp de <a href="http://laboratoria.la/" target="_blank">Laboratoria</a> y actualmente resido en Lima, Perú. Me interesan las <strong>causas sociales</strong>, el <strong>emprendimiento</strong>, <strong>e-commerce</strong>, <strong>e-learning</strong>, <strong>diseño</strong>, <strong>UX</strong>, <strong>branding</strong>, las <strong>buenas prácticas</strong> en todo lo que hago (entre otros) y hablo un <strong>inglés</strong> bastante fluido desde muy joven.</p>
-                                <p>En la actualidad busco ser parte de un equipo de emprendedores impulsados por una cultura de diseño y metodologías ágiles para poder amoldarme a nuevos estándares de trabajo.</p>
+                                <p>¡Hola! Mi nombre es Annia, soy una <em>front-end developer junior</em> egresada de la 6° promoción del bootcamp de <a href="http://laboratoria.la/" target="_blank">Laboratoria</a> y actualmente resido en Lima, Perú. Me interesan las <strong>causas sociales</strong>, el <strong>emprendimiento</strong>, <strong>e-commerce</strong>, <strong>e-learning</strong>, <strong>diseño</strong>, <strong>UX</strong>, <strong>branding</strong>, las <strong>buenas prácticas</strong> en todo lo que hago (entre otros) y hablo un <strong>inglés</strong> bastante fluido desde muy joven.</p>
+                                <p>En la actualidad busco ser parte de un equipo de emprendedores impulsados por una cultura de diseño y metodologías ágiles para poder amoldarme a nuevos estándares de trabajo en el área de desarrollo.</p>
                             </div>
                             <div class="col-md-5">
                                 <h5><strong>SKILL SET</strong></h5>
@@ -369,7 +400,7 @@
                         <img class="img-right" src="img/omfg.jpg" alt="Annia haciendo pedidos para OMFG! Accesorios">
                         <p>Mi primer trabajo fue a los 19 años cuando <strong>decidí</strong> hacer de mi hobby un negocio y abrí una tienda de accesorios hechos a mano en Facebook con intenciones de aprender más sobre el mundo de las ventas por internet. Fue una experiencia bastante enriquecedora y llena de aprendizaje, en la que desarrollé un fuerte interés por el <strong>emprendimiento</strong>, <strong>branding</strong> y la forma en la que mis clientes experimentaban el proceso de compras en línea y de forma presencial, (cosa que más adelante despertaría un interés aún mayor por el <strong>UX</strong>). Ese proyecto hizo que desarrollara aún más mis habilidades para la <strong>organización</strong>, <strong>planeación</strong>, mi enfoque al <strong>detalle</strong> y la <strong>fotografía</strong>.</p>
                         <p>He aprendido muchas cosas por mi propia cuenta, una de ellas fue el <strong>inglés</strong>, el cual empecé a hablar fluidamente desde los 14 años. Mi interés por las <strong>causas sociales</strong> despertó luego de eso, ya que aprender el idioma me permitió el acceso a muchas fuentes más de información en internet. Antes de ingresar a Laboratoria empecé otro emprendimiento, esta vez con intenciones de aplicar lo aprendido en el pasado, así como tambien de enfocarme en promover causas sociales cercanas a mi, relacionadas a la <strong>contaminación ambiental</strong>, <strong>sostenibilidad</strong> y <strong>productos libres de crueldad</strong>.</p>
-                        <p>En la actualidad busco ser parte de un equipo impulsado por una cultura de diseño y metodologías ágiles para poder adaptarme a nuevos estándares de trabajo. Una de mis metas a largo plazo es ser parte de la creación de productos que generen oportunidades y solucionen problemas del mundo y sé que tengo un largo camino por recorrer.</p>
+                        <p>En la actualidad busco ser parte de un equipo impulsado por una cultura de diseño y metodologías ágiles para poder adaptarme a nuevos estándares de trabajo en el área de desarrollo. Una de mis metas a largo plazo es ser parte de la creación de productos que generen oportunidades y solucionen problemas del mundo y sé que tengo un largo camino por recorrer.</p>
                         <p>Mi desempeño en el bootcamp de Laboratoria fue bastante bueno, creo que con una computadora y conexión a internet no hay algo que no pueda aprender a hacer; gracias a este mindset y mi personalidad decisiva siento que absorví como una esponja todos estos temas que eran algo nuevo para mí y obtuve varios reconocimientos a lo largo del programa.</p>
                     </div>
                 </div>
