@@ -3,7 +3,8 @@
         padding: 5% 7% 0 7%;
     }
     h3 {
-        font-size: 1.8em;
+        font-size: 1.9em;
+        font-weight: bold;
     }
     a:visited {
         color: #DD4056;
@@ -13,6 +14,10 @@
         float: left;
         margin-right: 20px;
         margin-bottom: 10px;
+    }
+    li {
+        list-style: square;
+        margin-left: 30px;
     }
     .home {
         .parallax-section {
@@ -48,6 +53,11 @@
     &__long {
         i {
             margin-left: 2em;
+        }
+    }
+    .about-content {
+        h3:first-child {
+            margin-top: 0;
         }
     }
 }
