@@ -30,13 +30,13 @@
     .parallax-section {
         background: url(img/header_background.jpg);
         background-attachment: fixed;
-        background-position: 40% 80%;
+        background-position: 40% 90%;
         background-repeat: no-repeat;
         webkit-background-size: 120%;
         -moz-background-size: 120%;
         -o-background-size: 120%;
         background-size: 120%;
-        min-height: 45vh;
+        min-height: 43vh;
         position: relative;
         opacity: 1;
     }
@@ -64,7 +64,7 @@
     color: $palette-primary;
     @extend %flex-center;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 45px 0;
     button {
         border-radius: 0 !important;
         margin: 0;
