@@ -34,7 +34,7 @@
 <body>
     <nav class="navbar-fixed hidden-xs">
         <div class="container-fluid">
-            <span class="nav-text">ANNIA J. FLORES | DESIGNER, FRONT-END DEVELOPER</span>
+            <span class="nav-text">ANNIA J. FLORES | UX/UI DESIGNER</span>
             <a class="nav-text" href="mailto:anniajflores@gmail.com" title="My email"><i class="fa fa-envelope-o"></i> SAY HELLO! :)</a>
         </div>
     </nav>
@@ -62,8 +62,8 @@
                     <div class="home__logo">
                         <img class="img-responsive" src="img/annia.png" alt="Annia">
                     </div>
-                    <p class="hidden-xs">DESIGNER, FRONT-END DEVELOPER, LIMA - PERU</p>
-                    <form target="_blank" method="get" action="https://itsandromeda.github.io/Portfolio/cv_eng.pdf">
+                    <p class="hidden-xs">UX/UI DESIGNER, LIMA - PERU</p>
+                    <form target="_blank" method="get" action="https://itsandromeda.github.io/Portfolio/cv-eng.pdf">
                         <button class="btn home__button animate-flicker" type="submit">Download CV</button>
                     </form>
                     <div id="jump" class="home__more animate-flicker hidden-sm hidden-md hidden-lg">
@@ -76,97 +76,142 @@
         <section id="work" class="small-grid">
             <div class="container-fluid">
                 <h2>RECENT PROJECTS</h2>
-                <p>These are just some of the projects I developed up to this date, you can see more on <a href="https://github.com/itsandromeda" target="_blank">my GitHub</a>.</p>
+                <p>To see more design work please checkout <a href="https://www.behance.net/itsandromeda" target="_blank">my Behance</a>. If you'd like to see my development work, check out <a href="https://www.github.com/itsandromeda" target="_blank">my GitHub.</a></p>
                 <div class="row">
-                    <div class="small-grid__box--dark col-xs-12 col-md-6">
-                        <h3>SHOES STORE</h3>
-                        <p>Shopping cart developed with React, Redux &amp; a fake Rest API.</p>
-                        <button type="button" class="btn" data-toggle="modal" data-target="#wandelust-modal">ECMAScript 6, React &amp; Redux</button>
+                    <div class="small-grid__box--dark col-xs-12 col-md-6" data-toggle="modal" data-target="#modal-1">
+                            <h3>OESCHLE UX CASE</h3>
+                            <p>How can we create an experience in which our customers are able to discover outfits and feel confident that these looks go with them?</p>
+                            <button type="button" class="btn">Figma, Design Thinking</button>
                     </div>
-                    <div class="small-grid__box--light col-xs-12 col-md-6">
-                        <h3>OESCHLE CHALLENGE</h3>
-                        <p>How could we create an experience in which their customers are able to discover looks and feel confident that these combinations go with them?</p>
-                        <button type="button" class="btn" data-toggle="modal" data-target="#pinterest-modal">Figma, Design Thinking</button>
+                    <div class="small-grid__box--light col-xs-12 col-md-6" data-toggle="modal" data-target="#modal-2">
+                        <h3>AMIGOCLOUD'S WEBSITE REDESIGN</h3>
+                        <p>Improve the old AmigoCloud's website look and feel.</p>
+                        <button type="button" class="btn">Adobe Illustrator, Adobe Photoshop, Figma</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-grid__box--light col-xs-12 col-md-6">
-                        <h3>YAPE</h3>
-                        <p>This is a replica of the BCP original app, this project is a mobile registration simulation.</p>
-                        <button type="button" class="btn" data-toggle="modal" data-target="#trello-modal">Local API, Components &amp; jQuery</button>
+                    <div class="small-grid__box--light col-xs-12 col-md-6" data-toggle="modal" data-target="#modal-3">
+                        <h3>AMIGOCOLLECT UI</h3>
+                        <p>This is a proposal for the AmigoCollect's app new UI.</p>
+                        <button type="button" class="btn">Adobe Illustrator, Sketch</button>
                     </div>
-                    <div class="small-grid__box--dark col-xs-12 col-md-6">
-                        <h3>FAB</h3>
-                        <p>Responsive replica of the FAB e-commerce website using the Foundation framework.</p>
-                        <button class="btn">Foundation, HTML5, CSS3</button>
+                    <div class="small-grid__box--dark col-xs-12 col-md-6" data-toggle="modal" data-target="#modal-4">
+                        <h3>DOLLSKILL SHOES STORE</h3>
+                        <p>I designed and developed a shoe store simmulator following the design guidelines of the Dollskill brand, this was a personal project.</p>
+                        <button class="btn">React &amp; Redux</button>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="modal fade" id="wandelust-modal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="container">
-                        <div class="modal-header row">
-                            <div class="col-md-12">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h3 class="modal-title">SHOES STORE</h3>
-                            </div>
-                        </div>
-                        <div class="modal-body row">
-                            <div class="col-md-4 col-xs-12">
-                                <h4>What I did</h4>
-                                <p>Create a list of products that can be filtered down and added to the shopping cart, on the checkout view these are able to be modified and eliminated from the cart.</p>
-                                <h4>Technologies</h4>
-                                <ul>
-                                    <li>React JS</li>
-                                    <li>Redux</li>
-                                    <li>CSS3</li>
-                                    <li>ECMAScript 6</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-8 col-xs-12">
+        <div class="modal fade" id="modal-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="container">
+                            <div class="modal-header row">
                                 <div class="col-md-12">
-                                    <h4>PROCESS</h4>
-                                    <p>This project was a part of my React &amp; Redux learning path, I used a fake Rest API to retrieve my products list.</p>
-                                    <p>This app is organized in a way that the components, actions and reducers are distributed in their respective files on the tree, I used this organization method since the app is really small.</p>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h3 class="modal-title">OESCHLE UX CASE</h3>
                                 </div>
-                                <div class="col-md-12 modal__btns">
-                                    <a class="modal-btn" href="https://github.com/itsandromeda/Shoes-Store" target="_blank">Code &amp; Demo</a>
+                            </div>
+                            <div class="modal-body row">
+                                <div class="col-md-4 col-xs-12">
+                                    <h4>Client</h4>
+                                    <p>Oeschle</p>
+                                    <h4>What I did</h4>
+                                    <p>Research, interviews, customer journey map, wireframes, prototyping, design.</p>
+                                    <h4>Tools & Methodologies</h4>
+                                    <ul>
+                                        <li>Design Thinking</li>
+                                        <li>Figma</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="col-md-12">
+                                        <p>This was a challenge brought up by Oeschle for my UX Design class in Laboratoria, we chose and worked in this project in pairs. We were able to document our process in the following post: <a href="https://medium.com/@gchaucae/de-la-idea-al-producto-un-proceso-de-ux-1d03d137b87f" target="_blank">Medium</a>.</p>
+                                    </div>
+                                    <div class="col-md-12 modal__btns">
+                                        <a class="modal-btn" href="https://www.figma.com/proto/PBt34NagBfJmhGnGZZA2ZVJw/Oe-Moda?scaling=contain&node-id=87%3A35&redirected=1" target="_blank">Prototipo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="pinterest-modal" role="dialog">
+        <div class="modal fade" id="modal-2" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="container">
+                            <div class="modal-header row">
+                                <div class="col-md-12">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h3 class="modal-title">AMIGOCLOUD'S WEBSITE REDESIGN</h3>
+                                </div>
+                            </div>
+                            <div class="modal-body row">
+                                <div class="col-md-4 col-xs-12">
+                                    <h4>Client</h4>
+                                    <p>AmigoCloud</p>
+                                    <h4>What I did</h4>
+                                    <p>Mockups</p>
+                                    <p>Icons</p>
+                                    <p>High fidelity prototypes</p>
+                                    <h4>Tools</h4>
+                                    <ul>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Adobe Photoshop</li>
+                                        <li>Figma</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="col-md-12">
+                                        <h4>ABOUT</h4>
+                                        <p>This was an exciting web design project where I was able to design the current AmigoCloud's website from the ground up. The old site had major hierarchy/contrast issues and didn't look very professional.</p>
+                                        <p>Here's the old website's preview:</p>
+                                        <img src="img/amigocloud-old.png" alt="AmigoCloud's old website" width="100%"/>
+                                    </div>
+                                    <div class="col-md-12 modal__btns">
+                                            <p>Take a look at the new design:</p><br>
+                                        <a class="modal-btn" href="https://www.behance.net/gallery/87414497/AmigoClouds-Homepage-Design" target="_blank">New Design on Behance</a>
+                                        <a class="modal-btn" href="https://www.amigocloud.com/en" target="_blank">New Design LIVE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="modal fade" id="modal-3" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="container">
                         <div class="modal-header row">
                             <div class="col-md-12">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h3 class="modal-title">OESCHLE CHALLENGE</h3>
+                                <h3 class="modal-title">AMIGOCOLLECT UI</h3>
                             </div>
                         </div>
                         <div class="modal-body row">
                             <div class="col-md-4 col-xs-12">
                                 <h4>Client</h4>
-                                <p>Oeschle</p>
+                                <p>AmigoCloud</p>
                                 <h4>What I did</h4>
-                                <p>Research, interviews, customer journey map, wireframes, prototype.</p>
-                                <h4>Methodologies</h4>
+                                <p>Illustrations</p>
+                                <p>Low fidelity Prototypes</p>
+                                <p>High fidelity Prototypes</p>
+                                <h4>Tools</h4>
                                 <ul>
-                                    <li>Design Thinking</li>
+                                    <li>Sketch</li>
+                                    <li>Adobe Illustrator</li>
                                 </ul>
                             </div>
                             <div class="col-md-8 col-xs-12">
                                 <div class="col-md-12">
-                                    <p>This was a challenge presented to us by Oeschle for my UX Design class in Laboratoria, we selected and worked on this project in pairs. We were able to document our progress from beginning to end on the following <a href="https://medium.com/@gchaucae/de-la-idea-al-producto-un-proceso-de-ux-1d03d137b87f" target="_blank">Medium post</a>.</p>
+                                    <h4>ABOUT</h4>
+                                    <p>This is a proposal for the AmigoCollect's new UI starting from the onboarding, to the sign in/sign up screens to the projects list and map view. This was a design exploration I did to improve the current UI of the app.</p>
                                 </div>
                                 <div class="col-md-12 modal__btns">
-                                    <a class="modal-btn" href="https://www.figma.com/proto/PBt34NagBfJmhGnGZZA2ZVJw/Oe-Moda?scaling=contain&node-id=87%3A35&redirected=1" target="_blank">Prototype</a>
+                                    <a class="modal-btn" href="https://www.behance.net/gallery/87416821/AmigoCollect-UI-Proposal" target="_blank">Behance project</a>
                                 </div>
                             </div>
                         </div>
@@ -174,6 +219,46 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="modal-4" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="container">
+                            <div class="modal-header row">
+                                <div class="col-md-12">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h3 class="modal-title">DOLLSKILL SHOES STORE</h3>
+                                </div>
+                            </div>
+                            <div class="modal-body row">
+                                <div class="col-md-4 col-xs-12">
+                                    <h4>What I did</h4>
+                                    <p>I DesignED a shoes shoe store simmulator following Dollskill's brand guidelines.</p>
+                                    <p>I Created a list of products that could be filtered out and added to the shopping cart</p>
+                                    <p>In the checkout view you can modify and eliminate items</p>
+                                    <h4>Technologies</h4>
+                                    <ul>
+                                        <li>React JS</li>
+                                        <li>Redux</li>
+                                        <li>CSS3</li>
+                                        <li>ECMAScript 6</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="col-md-12">
+                                        <h4>PROCESS</h4>
+                                        <p>This project was a part of my React + Redux learning path, I used a fake Rest API to get the list of products.</p>
+                                        <p>Another challenge was trying to design the views keeping the look and feel of the original Dollskill online store.</p>
+                                    </div>
+                                    <div class="col-md-12 modal__btns">
+                                        <a class="modal-btn" href="https://github.com/itsandromeda/Shoes-Store" target="_blank">Code &amp; Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
         <section id="about">
             <div class="container-fluid">
                 <div class="row">
@@ -182,14 +267,6 @@
                         <img class="img-circle img-responsive" src="img/about_me.jpg" alt="Annia J. Flores avatar">
                         <br>
                         <div>
-                            <h3><strong>Personality</strong></h3>
-                            <ul>
-                                <li>Determined</li>
-                                <li>Eye for detail</li>
-                                <li>Communicative</li>
-                                <li>Visual</li>
-                                <li>Collaborative</li>
-                            </ul>
                             <h3>ACKNOWLEDGEMENTS</h3>
 
                             <button class="btn collapse-btn" data-toggle="collapse" data-target="#upperThird">
@@ -232,46 +309,38 @@
                     <div class="about__short col-md-9">
                         <div class="col-md-12">
                             <div class="col-md-7">
-                                <p>Hi! My name is Annia, I'm a <em>Front-end developer</em> &amp; <a href="http://laboratoria.la/" target="_blank">Laboratoria</a> graduate living in Lima, Peru.</p>
-                                <p>I'm currently looking to become a part of a team of entrepreneurs and visionaries determined to change the world with design and technology. I'm a very passionate and commited person with the goals I set to myself and those are some of the things that characterize me, I believe I would fit in perfectly in a design-driven team that works with agile methodologies, since it's what I've been trained for in the past months.</p>
-                                <p>My performance in Laboratoria has been pretty good, I believe that with a computer in my hands and an internet connection anything is possible, I can learn just about anything that I commit myself to and I think this kind of mindset really helped me get through the program with a few acknowledgements.</p>
+                                <p>Hello! I'm Annia, a <em>multidisciplinary</em> designer based in Lima, Peru who focuses on UX/UI Design.</p>
+                                <p>My UX/UI journey started in 2017 after I finished a Web Development program at <a href="https://www.laboratoria.la/" target="_blank">Laboratoria.</a> I took Visual Design & User Experience courses after the bootcamp because I wanted to focus on my visual approach to problem solving and my deep interest in people.</p>
+                                <p>I'm looking to become a part of a team of entrepreneurs and visionaries determined to change the world with design and technology. I believe I would fit in perfectly in a design-driven team that works with agile methodologies, since I've been trained for it.</p>
 
                                 <h3>Interests</h3>
-                                <p>I'm really interested in UX Design, social issues and entrepreneurship. Laboratoria is still a huge support in my career, I'm currently taking UX courses to better my knowledge in the field.</p>
-                                <p>Apart from that I have a huge appreciation for music, SFX makeup, design, photography and one of the platforms I use to share some of my other hobbies is Instagram, so you can find more of the things that inspire me right there.</p>
+                                <p>I'm really interested in Visual Design, UX Research, social issues and entrepreneurship.</p>
+                                <p>Apart from that I have a huge appreciation for music, SFX makeup, photography and one of the platforms I use to share some of my other hobbies is Instagram, so you can find more of the things that inspire me right there.</p>
                             </div>
                             <div class="about-content col-md-5">
                                 <h3>SKILL SET</h3>
                                 <ul>
-                                    <li>React JS</li>
-                                    <li>Redux</li>
                                     <li>Lean UX</li>
                                     <li>Design Thinking</li>
                                     <li>Scrum</li>
-                                    <li>HTML5</li>
-                                    <li>CSS3</li>
+                                    <li>Material Design</li>
+                                    <li>HTML5 &amp; CSS3</li>
                                     <li>SASS &amp; BEM</li>
                                     <li>JavaScript</li>
                                     <li>jQuery &amp; AJAX</li>
-                                    <li>Bootstrap</li>
-                                    <li>Materialize</li>
-                                    <li>Foundation</li>
-                                    <li>npm (package manager)</li>
-                                    <li>HTTP JSON &amp; API consumption</li>
+                                    <li>React JS</li>
+                                    <li>Redux</li>
                                 </ul>
                                 <br>
                                 <h3>TOOLS</h3>
                                 <ul>
                                     <li>Sketch</li>
-                                    <li>Adobe XD</li>
                                     <li>Figma</li>
-                                    <li>Marvel App</li>
+                                    <li>Adobe XD</li>
+                                    <li>InVision</li>
                                     <li>Adobe Illustrator</li>
                                     <li>Adobe Photoshop</li>
                                     <li>Git</li>
-                                    <li>GitHub</li>
-                                    <li>Gulp</li>
-                                    <li>Heroku</li>
                                 </ul>
                                 <h3>LANGUAGES</h3>
                                 <ul>
@@ -301,7 +370,7 @@
             </section>
         </header>
         <div id="contact" class="download">
-            <form target="_blank" method="get" action="https://itsandromeda.github.io/Portfolio/cv_eng.pdf">
+            <form target="_blank" method="get" action="https://itsandromeda.github.io/Portfolio/cv-eng.pdf">
                 <p>Say hello: anniajflores@gmail.com</p>
                 <i class="fa fa-long-arrow-down animate-flicker"></i>
                 <button class="btn home__button" type="submit">Download my CV</button>
