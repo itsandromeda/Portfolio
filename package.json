@@ -31,7 +31,7 @@
     "homepage": "https://github.com/itsandromeda/Portfolio#readme",
     "devDependencies": {
         "body-parser": "^1.19.0",
-        "browser-sync": "^2.26.7",
+        "browser-sync": "^2.27.10",
         "gulp": "^3.9.1",
         "gulp-browserify": "^0.5.1",
         "gulp-concat": "^2.6.1",
